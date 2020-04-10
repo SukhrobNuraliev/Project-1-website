@@ -1,0 +1,218 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark{
+    padding: 15px;
+    background: rgb(51, 51, 51);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.clr {
+    clear: both;;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button1{
+    height: 38px;
+    border: none;
+    padding: 0 20px;
+    color: white;
+    background: rgb(235, 91, 24);
+    border-radius: 3px;
+}
+
+/*Header*/
+
+header {
+    background: rgb(88, 88, 88);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: red 4px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand h1 {
+    margin: 0;
+    padding-left: 30px;
+}
+header nav {
+    float: right;
+    padding-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: rgb(235, 91, 24);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+#showcase {
+    min-height: 400px;
+    background: url('https://wallpaperaccess.com/full/1657858.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: white;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: rgb(88, 88, 88);
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 19px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 35px;
+    width: 290px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 33%;
+    text-align: center;
+    border: ;
+}
+
+#boxes .box img{
+    width: 40%;
+}
+
+.article1{
+    float: left;
+    width: 65%;
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background: rgb(236, 98, 34);
+    color: white;
+    margin-top: 20px;
+}
+
+aside form input, textarea {
+    padding: 4px;
+    height: 35px;
+    width: 200px;
+    border-radius: 3px;
+    border-style: none;
+
+}
+
+ul.services li{
+    list-style: none;
+    padding: 20px;
+    border: grey solid 1px;
+    background: rgb(187, 187, 187);
+    margin-bottom: 5px;
+}
+
+@media(max-width: 768px){
+    header #brand,
+    header nav,
+    header nav li,
+    newsletter h1,
+    newsletter form,
+    #boxes .box,
+    article.article1,
+    aside#sidebar
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 10px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter input, button {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
